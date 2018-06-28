@@ -28,7 +28,7 @@ export default class MapScreen extends React.Component {
         <MapView
           style={styles.mapView}
           region={this.state.mapRegion}
-          onRegionChange={this._handleMapRegionChange}
+          onRegionChange={() => this._handleMapRegionChange}
         >
         {this.state.markers.map(marker => (
             <MapView.Marker
